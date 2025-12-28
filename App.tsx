@@ -55,14 +55,14 @@ const App: React.FC = () => {
       <nav className="h-20 flex items-center justify-center border-b border-white/5 bg-black/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-700 rounded-md flex items-center justify-center font-black text-black shadow-[0_0_15px_rgba(245,158,11,0.5)]">E</div>
-          <span className="text-xl font-black tracking-tighter italic">ETERNAL <span className="text-amber-500">FRAMES</span></span>
+          <span className="text-xl font-black tracking-tighter italic uppercase">ETERNAL <span className="text-amber-500">FRAMES</span></span>
         </div>
       </nav>
 
       {/* Hero Section */}
       <header className="relative pt-16 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-[150px]" />
+        <div className="absolute inset-0 z-0 text-center pointer-events-none opacity-20">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/10 rounded-full blur-[150px]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
@@ -70,16 +70,16 @@ const App: React.FC = () => {
             <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-ping" />
             VAGAS LIMITADAS PARA NÃO SATURAR O ALGORITMO
           </div>
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-10 tracking-tighter leading-[0.9] max-w-5xl mx-auto">
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-10 tracking-tighter leading-[0.9] max-w-5xl mx-auto uppercase">
             Por que seus vídeos <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-amber-200 via-amber-500 to-amber-700 drop-shadow-[0_0_30px_rgba(245,158,11,0.2)] uppercase">TRAVAM EM 200 VIEWS?</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-b from-amber-200 via-amber-500 to-amber-700 drop-shadow-[0_0_30px_rgba(245,158,11,0.2)]">TRAVAM EM 200 VIEWS?</span>
           </h1>
           <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mx-auto mb-14 px-4 leading-relaxed font-medium">
             O problema não é o seu conteúdo, é o seu <span className="text-white underline decoration-amber-500 underline-offset-8">material reciclado</span>. Pare de usar vídeos que o algoritmo já baniu e comece a viralizar com o pack indetectável.
           </p>
           
           <div className="flex flex-col items-center gap-8">
-            <Button size="lg" onClick={handleCheckout} className="group h-20 px-12 text-2xl bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 hover:scale-105 shadow-[0_0_50px_rgba(245,158,11,0.4)]">
+            <Button size="lg" onClick={handleCheckout} className="group h-20 px-12 text-2xl bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 hover:scale-105 shadow-[0_0_50px_rgba(245,158,11,0.4)] border-none">
               <span className="relative z-10 uppercase tracking-tighter font-black">QUERO ACESSO IMEDIATO (R$ 9,90)</span>
             </Button>
             <div className="flex flex-col items-center gap-2">
@@ -88,7 +88,7 @@ const App: React.FC = () => {
                 <span className="flex items-center gap-2">✔ Sem Direitos Autorais</span>
                 <span className="flex items-center gap-2">✔ Entrega Automática</span>
               </div>
-              <p className="text-amber-500 font-black text-sm animate-bounce mt-4">⚠️ Só restam {spotsLeft} acessos promocionais!</p>
+              <p className="text-amber-500 font-black text-sm animate-bounce mt-4 tracking-widest uppercase">⚠️ Só restam {spotsLeft} acessos promocionais!</p>
             </div>
           </div>
         </div>
@@ -99,14 +99,14 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="space-y-10">
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-[1] text-white">
-                O TikTok sabe que você está <span className="text-amber-500 italic">Copiando.</span>
+              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-[1] text-white uppercase">
+                O Algoritmo sabe que você está <span className="text-amber-500 italic underline decoration-white/20">Copiando.</span>
               </h2>
               <div className="space-y-6">
                 <p className="text-xl text-slate-400 leading-relaxed">
-                  Quando você pega um vídeo "grátis" do Pinterest, você está assinando o atestado de óbito do seu canal. Aquele arquivo já foi postado 10.000 vezes. O algoritmo tem a "impressão digital" dele e <span className="text-white font-bold">joga seu alcance no lixo em segundos.</span>
+                  Quando você pega um vídeo "grátis" do Pinterest, você está assinando o atestado de óbito do seu canal. Aquele arquivo já foi postado 10.000 vezes. O sistema tem a "impressão digital" dele e <span className="text-white font-bold">joga seu alcance no lixo em segundos.</span>
                 </p>
-                <div className="p-8 rounded-3xl bg-amber-500/5 border border-amber-500/20 space-y-4">
+                <div className="p-8 rounded-3xl bg-amber-500/5 border border-amber-500/20 space-y-4 shadow-[inset_0_0_20px_rgba(245,158,11,0.05)]">
                   <h4 className="text-amber-500 font-black uppercase text-sm tracking-widest">A Realidade que não te contam:</h4>
                   <ul className="space-y-4">
                     <li className="flex gap-4 items-start">
@@ -115,11 +115,11 @@ const App: React.FC = () => {
                     </li>
                     <li className="flex gap-4 items-start">
                       <span className="text-red-500 text-xl font-bold">✕</span>
-                      <p className="text-slate-300 font-medium">Edição de iniciante não altera o Hash do arquivo.</p>
+                      <p className="text-slate-300 font-medium">Edição de iniciante não altera o "Hash" do arquivo.</p>
                     </li>
                     <li className="flex gap-4 items-start">
                       <span className="text-red-500 text-xl font-bold">✕</span>
-                      <p className="text-slate-300 font-medium">Você trabalha de graça para o Mark e para o Shou Zi Chew.</p>
+                      <p className="text-slate-300 font-medium">Você perde horas trabalhando de graça para as redes.</p>
                     </li>
                   </ul>
                 </div>
@@ -129,15 +129,15 @@ const App: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-10 bg-amber-500/10 rounded-full blur-[100px] -z-10" />
               <div className="bg-[#0a0a0a] border border-white/10 rounded-[3rem] p-12 shadow-3xl text-center space-y-8">
-                <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10">
+                <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                   <span className="text-5xl">🔒</span>
                 </div>
-                <h3 className="text-3xl font-black text-white">Segurança Vitalícia</h3>
+                <h3 className="text-3xl font-black text-white uppercase tracking-tighter">Segurança Vitalícia</h3>
                 <p className="text-slate-400 leading-relaxed italic">
-                  "O Eternal Frames não é apenas um pack, é uma barreira contra o sistema de detecção de conteúdo duplicado. Arquivos virgens e técnica de camuflagem."
+                  "O Eternal Frames não é apenas um pack, é uma barreira contra o sistema de detecção de conteúdo duplicado. Arquivos virgens e técnica de camuflagem digital."
                 </p>
                 <div className="h-px bg-gradient-to-r from-transparent via-amber-500/30 to-transparent w-full" />
-                <p className="text-red-500 font-black text-sm uppercase tracking-widest animate-pulse">Preço de R$ 9,90 expira em breve</p>
+                <p className="text-red-500 font-black text-sm uppercase tracking-widest animate-pulse">Preço Promocional expira em breve</p>
               </div>
             </div>
           </div>
@@ -147,16 +147,16 @@ const App: React.FC = () => {
       {/* Library Section */}
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl lg:text-6xl font-black mb-20 tracking-tighter uppercase">CONTEÚDO <span className="text-amber-500 italic">PREMIUM</span></h2>
+          <h2 className="text-4xl lg:text-6xl font-black mb-20 tracking-tighter uppercase">CONTEÚDO <span className="text-amber-500 italic">INDETECTÁVEL</span></h2>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {PACK_ITEMS.map((item, i) => (
-              <div key={i} className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 hover:border-amber-500/50 transition-all duration-700">
+              <div key={i} className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 hover:border-amber-500/50 transition-all duration-700 shadow-2xl">
                 <img src={item.thumbnail} className="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" alt={item.category} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-4 right-4 text-left">
-                  <p className="text-[10px] text-amber-500 font-black uppercase tracking-widest mb-1">NICHO {i+1}</p>
-                  <h4 className="text-sm font-black uppercase leading-tight">{item.category}</h4>
+                  <p className="text-[10px] text-amber-500 font-black uppercase tracking-widest mb-1">MÓDULO {i+1}</p>
+                  <h4 className="text-sm font-black uppercase leading-tight tracking-tighter">{item.category}</h4>
                 </div>
               </div>
             ))}
@@ -164,13 +164,13 @@ const App: React.FC = () => {
 
           <div className="mt-20 grid md:grid-cols-3 gap-8">
             {[
-              { t: "100+ Vídeos 4K", d: "Sem compressão, bitrate máximo para o Reels.", e: "💎" },
-              { t: "150+ Imagens", d: "Fundo perfeito para legendas dinâmicas.", e: "📸" },
+              { t: "100+ Vídeos 4K", d: "Sem compressão, bitrate máximo para viralizar.", e: "💎" },
+              { t: "150+ Imagens", d: "Fundo perfeito para legendas e hooks.", e: "📸" },
               { t: "Cenários Luxury", d: "Casas, Relógios e muito Cash.", e: "💰" }
             ].map((box, i) => (
               <div key={i} className="p-8 rounded-3xl bg-[#0a0a0a] border border-white/5 hover:border-amber-500/20 transition-all">
                 <span className="text-3xl block mb-4">{box.e}</span>
-                <h4 className="text-xl font-bold mb-2">{box.t}</h4>
+                <h4 className="text-xl font-bold mb-2 uppercase tracking-tighter">{box.t}</h4>
                 <p className="text-slate-500 text-sm font-medium">{box.d}</p>
               </div>
             ))}
@@ -183,17 +183,17 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center text-black">
             <div>
-              <span className="bg-black text-amber-500 px-4 py-1 font-black text-xs uppercase tracking-widest mb-6 inline-block">MÉTODO ANTI-REUSO</span>
+              <span className="bg-black text-amber-500 px-4 py-1 font-black text-xs uppercase tracking-widest mb-6 inline-block">MÉTODO ANTI-STRIKE</span>
               <h2 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tighter uppercase">O Guia de <br/> Edição Secreta</h2>
               <p className="text-lg font-bold mb-10 opacity-80">
-                Ter os arquivos é só metade do jogo. No nosso guia, você aprende as 5 técnicas exatas para tornar qualquer material 100% original para o algoritmo em menos de 2 minutos.
+                Ter os arquivos é só metade do jogo. No nosso guia, você aprende as técnicas exatas para tornar qualquer material 100% original para o algoritmo em menos de 2 minutos.
               </p>
               <div className="space-y-4">
                 {TECHNIQUES.map((tech, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-2xl bg-black/5 border border-black/10">
                     <div className="w-8 h-8 rounded-lg bg-black text-amber-500 flex items-center justify-center flex-shrink-0 font-black">{i+1}</div>
                     <div>
-                      <h4 className="font-black text-lg">{tech.title}</h4>
+                      <h4 className="font-black text-lg uppercase tracking-tighter">{tech.title}</h4>
                       <p className="text-black/60 text-sm font-bold">{tech.desc}</p>
                     </div>
                   </div>
@@ -201,17 +201,17 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-black rounded-[3rem] p-4 shadow-3xl rotate-2">
+              <div className="bg-black rounded-[3rem] p-4 shadow-[0_0_80px_rgba(0,0,0,0.4)] rotate-2">
                 <div className="bg-[#111] rounded-[2.5rem] aspect-[9/16] flex flex-col items-center justify-center p-12 text-center overflow-hidden relative">
-                   <div className="absolute inset-0 bg-amber-500/10 animate-pulse" />
-                   <div className="w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mb-8">
+                   <div className="absolute inset-0 bg-amber-500/5 animate-pulse" />
+                   <div className="w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(245,158,11,0.4)]">
                      <svg className="w-10 h-10 text-black" fill="currentColor" viewBox="0 0 20 20">
                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                        <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                      </svg>
                    </div>
-                   <h3 className="text-4xl font-black text-white mb-4 uppercase">INDETECTÁVEL</h3>
-                   <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">Pronto para monetizar</p>
+                   <h3 className="text-4xl font-black text-white mb-4 uppercase tracking-tighter">INDETECTÁVEL</h3>
+                   <p className="text-amber-500 font-bold tracking-[0.2em] uppercase text-xs">Aprovado para Monetização</p>
                 </div>
               </div>
             </div>
@@ -219,18 +219,18 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials (Feedback) Section */}
+      {/* Testimonials */}
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-black mb-20 tracking-tighter uppercase text-white/50 italic">Quem já saiu do zero</h2>
+          <h2 className="text-3xl font-black mb-20 tracking-tighter uppercase text-white/50 italic">Resultados reais</h2>
           <div className="grid md:grid-cols-2 gap-8 text-left">
             {TESTIMONIALS.map((t) => (
-              <div key={t.id} className="bg-[#050505] border border-white/5 p-10 rounded-[2.5rem] relative group hover:border-amber-500/20 transition-all">
+              <div key={t.id} className="bg-[#050505] border border-white/5 p-10 rounded-[2.5rem] relative group hover:border-amber-500/20 transition-all shadow-2xl">
                 <div className="absolute top-8 right-8 text-amber-500 font-black text-xs italic tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-full">{t.views}</div>
                 <div className="flex items-center gap-4 mb-8">
-                  <img src={t.avatar} className="w-14 h-14 rounded-full grayscale group-hover:grayscale-0 transition-all object-cover border-2 border-white/5" alt={t.name} />
+                  <img src={t.avatar} className="w-14 h-14 rounded-full grayscale group-hover:grayscale-0 transition-all object-cover border-2 border-white/10" alt={t.name} />
                   <div>
-                    <h4 className="font-bold text-white text-lg mb-0.5">{t.name}</h4>
+                    <h4 className="font-bold text-white text-lg mb-0.5 tracking-tighter">{t.name}</h4>
                     <span className="text-white/30 text-xs font-bold tracking-widest uppercase">{t.handle}</span>
                   </div>
                 </div>
@@ -241,28 +241,28 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing / CTA Section with Heavy Urgency */}
+      {/* Pricing / CTA Section */}
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-black via-[#0a0a0a] to-black">
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-[#0a0a0a] border border-amber-500/20 rounded-[3rem] p-12 lg:p-24 text-center relative shadow-3xl">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-600 via-amber-500 to-red-600" />
             
-            <span className="text-red-500 font-black text-sm tracking-[0.3em] uppercase mb-8 block animate-pulse">Últimos {spotsLeft} Acessos Restantes</span>
+            <span className="text-red-500 font-black text-sm tracking-[0.3em] uppercase mb-8 block animate-pulse">Últimos {spotsLeft} Acessos Promocionais</span>
             <h2 className="text-5xl lg:text-7xl font-black mb-8 tracking-tighter uppercase leading-[0.8]">Comece Seu <br/><span className="text-amber-500 italic">Império Dark</span></h2>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
               <div className="text-white/20 line-through text-2xl font-black italic">R$ 47,00</div>
               <div className="flex items-baseline gap-2">
-                <span className="text-amber-500 text-8xl font-black tracking-tighter">R$ 9,90</span>
+                <span className="text-amber-500 text-8xl font-black tracking-tighter drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">R$ 9,90</span>
               </div>
             </div>
 
-            <Button fullWidth size="lg" onClick={handleCheckout} className="h-24 text-2xl font-black tracking-tighter shadow-[0_20px_60px_rgba(245,158,11,0.3)] bg-gradient-to-r from-amber-600 to-amber-400 hover:scale-[1.02]">
-              QUERO ACESSO IMEDIATO (SÓ 9,90)
+            <Button fullWidth size="lg" onClick={handleCheckout} className="h-24 text-2xl font-black tracking-tighter shadow-[0_20px_60px_rgba(245,158,11,0.3)] bg-gradient-to-r from-amber-600 to-amber-400 hover:scale-[1.02] border-none">
+              LIBERAR MEU ACESSO AGORA
             </Button>
 
             <div className="mt-12 text-white/30 text-[10px] font-bold uppercase tracking-[0.2em] space-y-4">
-              <p>O preço subirá para R$ 47,00 assim que as vagas acabarem.</p>
+              <p>O preço subirá para R$ 47,00 automaticamente após o esgotamento das vagas.</p>
               <div className="flex items-center justify-center gap-4 opacity-50">
                 <span className="h-px bg-white/10 flex-1" />
                 <span className="text-amber-500">Expira em: {timeLeft.minutes}:{timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}</span>
@@ -273,16 +273,16 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ (Dúvidas) Section */}
+      {/* FAQ Section */}
       <section className="py-24 bg-black/50 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-black text-center mb-16 uppercase tracking-widest text-white/40 italic">Tire suas dúvidas</h2>
           <div className="space-y-4">
             {FAQ_DATA.map((item, i) => (
-              <details key={i} className="group bg-[#0a0a0a] border border-white/5 rounded-2xl p-6 transition-all hover:border-amber-500/20">
+              <details key={i} className="group bg-[#0a0a0a] border border-white/5 rounded-2xl p-6 transition-all hover:border-amber-500/20 shadow-lg">
                 <summary className="flex items-center justify-between cursor-pointer list-none">
-                  <h4 className="text-lg font-bold text-white/80">{item.question}</h4>
-                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-open:rotate-180 transition-all bg-black">
+                  <h4 className="text-lg font-bold text-white/80 uppercase tracking-tighter">{item.question}</h4>
+                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-open:rotate-180 transition-all bg-black shadow-inner">
                     <svg className="w-4 h-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -300,20 +300,20 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="py-20 border-t border-white/5 text-center bg-black">
         <div className="flex items-center justify-center gap-2 mb-10">
-          <div className="w-10 h-10 bg-amber-500 rounded-md flex items-center justify-center font-black text-black">E</div>
-          <span className="text-2xl font-black tracking-tighter uppercase italic">ETERNAL <span className="text-amber-500">FRAMES</span></span>
+          <div className="w-10 h-10 bg-amber-500 rounded-md flex items-center justify-center font-black text-black shadow-[0_0_20px_rgba(245,158,11,0.3)]">E</div>
+          <span className="text-2xl font-black tracking-tighter uppercase italic tracking-widest">ETERNAL <span className="text-amber-500">FRAMES</span></span>
         </div>
-        <p className="text-white/20 text-xs font-bold uppercase tracking-widest mb-10">© 2026 Eternal Frames. Todos os direitos reservados.</p>
+        <p className="text-white/20 text-xs font-bold uppercase tracking-[0.3em] mb-10">© 2026 Eternal Frames. Todos os direitos reservados.</p>
         <div className="flex justify-center gap-8 text-[10px] text-white/40 font-black uppercase tracking-[0.2em]">
           <a href="#" className="hover:text-amber-500 transition-colors">Termos de Uso</a>
-          <a href="#" className="hover:text-amber-500 transition-colors">Política de Privacidade</a>
+          <a href="#" className="hover:text-amber-500 transition-colors">Privacidade</a>
           <a href="#" className="hover:text-amber-500 transition-colors">Suporte</a>
         </div>
       </footer>
 
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-[100] lg:hidden">
-        <Button fullWidth size="lg" onClick={handleCheckout} className="h-16 text-lg bg-gradient-to-r from-amber-600 to-amber-400 text-black font-black shadow-2xl relative overflow-hidden">
+        <Button fullWidth size="lg" onClick={handleCheckout} className="h-16 text-lg bg-gradient-to-r from-amber-600 to-amber-400 text-black font-black shadow-[0_10px_40px_rgba(0,0,0,0.8)] relative overflow-hidden border-none">
           <span className="relative z-10">LIBERAR MEU ACESSO - R$ 9,90</span>
           <div className="absolute inset-0 bg-white/10 animate-pulse" />
         </Button>

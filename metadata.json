@@ -1,0 +1,8 @@
+{
+  "name": "Eternal Frames - Biblioteca de Conteúdo Dark",
+  "description": "Uma biblioteca premium de conteúdo anti-copyright para creators de canais dark no TikTok e Instagram.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
